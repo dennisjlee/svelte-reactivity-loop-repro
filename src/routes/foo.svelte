@@ -1,23 +1,12 @@
 <script>
 
-  import Bar from './_Bar.svelte';
+  import View from './_FakeView.svelte';
 
-  let selectedId = null;
-  let models = {
-    submodels: [
-      {
-        id: '123',
-        details: 'Lorem ipsum'
-      },
-      {
-        id: '234',
-        details: 'dolor sit amet'
-      }
-    ]
+  let foo = {
+    foo: 'foo',
+    bar: 'bar'
   };
 
 </script>
 
-this is route /foo
-
-<Bar {selectedId} {models}/>
+<View {foo} />
